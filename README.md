@@ -10,4 +10,4 @@ This project is a part of The Odin Project curriculum. It's a simple restaurant 
 
 ## Demo
 
-You can view a live demo of this project [here](https://your-demo-link.com).
+You can view a live demo of this project [here](https://ekrat123.github.io/restaurant-TOP-project/).
