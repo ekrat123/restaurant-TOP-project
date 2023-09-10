@@ -1,0 +1,10 @@
+h1 {
+  color: red;
+}
+body {
+  background-color: rgb(240, 248, 255);
+}
+
+#container {
+  background-color: rgba(127, 255, 212, 0.7);
+}
