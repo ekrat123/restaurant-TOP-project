@@ -3,7 +3,7 @@ containerContact.classList.add("contact");
 
 export default function createContact() {
   containerContact.innerHTML = "";
-  containerContact.innerHTML = `<h1>Great Amed Restaurant</h1>
+  containerContact.innerHTML = `<h1>Contact</h1>
   <h3>Address:</h3>
 
  <p>123 Sur Flavors Street Diyarbakır, Turkey</p>

@@ -11,6 +11,7 @@ body {
 #content {
   background-color: rgb(96, 108, 56, 0.9);
   width: 90vw;
+  max-width: 630px;
   height: 100vh;
   margin: 0 auto;
   padding: 0.1px;
@@ -30,6 +31,7 @@ h1 {
   padding: 1rem;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 600;
+  line-height: 1.4;
 }
 span {
   font-style: italic;
