@@ -11,6 +11,8 @@ createBtn("menu");
 createBtn("contact");
 const contentEl = document.createElement("div");
 contentEl.classList.add("content2");
+const newEl3 = createHome();
+contentEl.appendChild(newEl3);
 containerEl.appendChild(contentEl);
 
 function createBtn(btn) {

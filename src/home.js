@@ -6,7 +6,7 @@ export default function createHome() {
   const h1El = document.createElement("h1");
   h1El.textContent = "Great Amed Restaurant";
   const pEl = document.createElement("p");
-  pEl.textContent = `Welcome to our Diyarbakır gem, where culinary artistry meets the rich tapestry of local Kurdish cuisine. Nestled in the heart of the city, our restaurant is a haven for those seeking an authentic taste of the region's culinary heritage.
+  pEl.textContent = ` Welcome to our Diyarbakır gem, where culinary artistry meets the rich tapestry of local Kurdish cuisine. Nestled in the heart of the city, our restaurant is a haven for those seeking an authentic taste of the region's culinary heritage.
 
   At our establishment, we take pride in offering a tantalizing journey through the diverse and vibrant flavors of Kurdish cuisine. Our chefs, steeped in tradition, craft each dish with care, using locally sourced ingredients to capture the essence of the Kurdish culinary experience.
   

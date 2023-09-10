@@ -3,43 +3,62 @@ body {
   padding: 0;
   background: url(images/background.jpg);
   width: 100vw;
-  height: 100vh;
+
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #content {
-  background-color: rgb(96, 108, 56, 0.95);
-  width: 80vw;
+  background-color: rgb(96, 108, 56, 0.9);
+  width: 90vw;
   height: 100vh;
   margin: 0 auto;
   padding: 0.1px;
+}
+.content2 {
+  padding: 1rem;
 }
 
 h1 {
   color: #023047;
   text-align: center;
   background-color: #a2d2ff;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .home p {
   padding: 1rem;
-  color: #e36414;
+  color: rgba(0, 0, 0, 0.9);
   font-weight: 600;
+}
+span {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: #2ec4b6;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .btnDiv {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  padding: 20px;
+  padding: 0.5rem;
+  padding-top: 2rem;
 }
 
 button {
   padding: 0.5rem;
+
   width: 5rem;
   font-size: 1rem;
   border-radius: 5px;
   background-color: #4cc9f0;
+}
+
+button::first-letter {
+  text-transform: capitalize;
 }
