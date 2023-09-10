@@ -1,23 +1,33 @@
 import "./style.css";
 import createHome from "./home";
+import createMenu from "./menu";
+import createContact from "./contact";
 const containerEl = document.querySelector("#content");
 const btnDiv = document.createElement("div");
 btnDiv.classList.add("btnDiv");
 containerEl.appendChild(btnDiv);
 createBtn("home");
 createBtn("menu");
-const newEl = createHome();
-containerEl.appendChild(newEl);
+createBtn("contact");
+const contentEl = document.createElement("div");
+contentEl.classList.add("content2");
+containerEl.appendChild(contentEl);
 
 function createBtn(btn) {
   const newBtn = document.createElement("button");
   newBtn.textContent = btn;
   btnDiv.appendChild(newBtn);
 
-  if (btn === "home") {
-    newBtn.addEventListener("click", () => {
-      const newEl = createHome();
-      containerEl.appendChild(newEl);
-    });
-  }
+  newBtn.addEventListener("click", () => {
+    contentEl.innerHTML = ""; // Clear existing content
+    const newEl =
+      btn === "home"
+        ? createHome()
+        : btn === "menu"
+        ? createMenu()
+        : btn === "contact"
+        ? createContact()
+        : null;
+    contentEl.appendChild(newEl); // Append new content
+  });
 }
