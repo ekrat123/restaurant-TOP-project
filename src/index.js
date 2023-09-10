@@ -1,8 +1,23 @@
 import "./style.css";
-import background from "./images/background.jpg";
+import createHome from "./home";
+const containerEl = document.querySelector("#content");
+const btnDiv = document.createElement("div");
+btnDiv.classList.add("btnDiv");
+containerEl.appendChild(btnDiv);
+createBtn("home");
+createBtn("menu");
+const newEl = createHome();
+containerEl.appendChild(newEl);
 
-/* const myBackground = new Image();
-myBackground.src = background;
+function createBtn(btn) {
+  const newBtn = document.createElement("button");
+  newBtn.textContent = btn;
+  btnDiv.appendChild(newBtn);
 
-const containerEl = document.querySelector("#container");
-containerEl.appendChild(myBackground); */
+  if (btn === "home") {
+    newBtn.addEventListener("click", () => {
+      const newEl = createHome();
+      containerEl.appendChild(newEl);
+    });
+  }
+}

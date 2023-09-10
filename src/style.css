@@ -1,10 +1,45 @@
-h1 {
-  color: red;
-}
 body {
-  background-color: rgb(240, 248, 255);
+  margin: 0;
+  padding: 0;
+  background: url(images/background.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#container {
-  background-color: rgba(127, 255, 212, 0.7);
+#content {
+  background-color: rgb(96, 108, 56, 0.95);
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0.1px;
+}
+
+h1 {
+  color: #023047;
+  text-align: center;
+  background-color: #a2d2ff;
+  padding: 20px;
+}
+
+.home p {
+  padding: 1rem;
+  color: #e36414;
+  font-weight: 600;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 20px;
+}
+
+button {
+  padding: 0.5rem;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #4cc9f0;
 }
